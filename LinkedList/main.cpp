@@ -56,13 +56,26 @@ int main()
 			break;
 
         case 5:
-            system("cls");
+              system("cls");
+            view(l);
+            cout << "Delete data setelah ID Karyawan : "; cin>>ddk;
+            r=(l).awal;
+            while(info(r).idKar!=ddk) {
+                r=next(r);
+            }
+            p= new Elmlist;
+            deleteafter(&l,&p,r);
+            break;
             
 			break;
         case 6:
+
             system("cls");
-            
-			break;
+            address q;
+            p = new Elmlist;
+            deletelast(&l,&q);
+            break;
+			
         case 7:
             system("cls");
             
