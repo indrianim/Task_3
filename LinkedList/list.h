@@ -29,6 +29,8 @@ address alokasi (infotype x);
 void buat_baru(infotype *x);
 void cariid(infotype *x);
 void insertafter(list *l, address p, address s);
+void deletelast(list *l,address *p);
+void deleteafter(list *l, address *p, address s);
 address cari(list l, infotype x);
 
 #endif // LIST_H_INCLUDED
