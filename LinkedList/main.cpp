@@ -46,9 +46,11 @@ int main()
             insertafter(&l,c,r);
             break;
         case 3:
-            system("cls");
-            
-			break;
+           system("cls");
+            buat_baru(&b);
+            c=alokasi(b);
+            insertlast(&l,c);
+            break;
 
         case 4:
             system("cls");
@@ -77,8 +79,8 @@ int main()
             break;
 			
         case 7:
-            system("cls");
-            
+           system("cls");
+            view(l);
             break;
         case 8:
             system("cls");
