@@ -29,8 +29,10 @@ int main()
         switch (mn)
         {
         case 1:
-            system("cls");
-            
+           system("cls");
+            buat_baru(&b);
+            c=alokasi(b);
+            insertfirst(&l,c);
             break;
         case 2:
             system("cls");
@@ -52,8 +54,10 @@ int main()
 
         case 4:
             system("cls");
-            
-			break;
+            address p;
+            p = new Elmlist;
+            deletefirst(&l,&p);
+            break;
 
         case 5:
               system("cls");
