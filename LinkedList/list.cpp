@@ -68,7 +68,6 @@ void view(list l)
         Q=next(Q);
         cout<<endl<<endl;
     }
-
     getch();
 }
 void cariid(infotype *x)
