@@ -40,7 +40,37 @@ void insertafter(list *l, address p, address s)
     next(Q)=p;
 
 }
+void insertlast(list *l,address p)
+{
+    address Q;
+    Q=(*l).awal;
+    while(next(Q)!=NULL)
+    {
+        Q=next(Q);
+    }
+    next(p)=NULL;
+    next(Q)=p;
+}
+void view(list l)
+{
+    address Q;
+    Q=(l).awal;
+    cout<< "=============DATA KARYAWAN============= "<<endl;
+    if(Q==NULL)
+        cout<<"Data Kosong"<<endl;
+    while(Q!=NULL)
+    {
+        cout<<"ID Karyawan  : " <<info(Q).idKar <<endl;
+        cout<<"Nama  : " <<info(Q).nama<<endl;
+        cout<<"Alamat  : " <<info(Q).alm<<endl;
+        cout<<"Jenis Kelamin  : " <<info(Q).jk<<endl;
+        cout<<"No. Tlp  : " <<info(Q).notlp<<endl;
+        Q=next(Q);
+        cout<<endl<<endl;
+    }
 
+    getch();
+}
 void cariid(infotype *x)
 {
     cout<< "=============CARI DATA KARYAWAN============= "<<endl;
